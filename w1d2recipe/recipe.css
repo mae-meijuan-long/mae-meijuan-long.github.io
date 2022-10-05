@@ -40,10 +40,8 @@ font-family:"Georgia",serif;
 .comments{
      background-color:#FFFFA8;
      margin:0 auto;
-     solid #000;
      width:90%;
      font-style: italic;
-
 }
 
 
@@ -53,7 +51,6 @@ font-family:"Georgia",serif;
     text-align:right;
     color:#404040;
     font-size:11pt;
-     solid #000;
      width:20%;
 }
 
