@@ -1,0 +1,116 @@
+h1 {
+color:#A4A400;
+background-color:#F0F0F0;
+font-family:Lucida Sans Unicode;
+font-size:22pt;
+text-align:center;
+text-decoration: underline;
+}
+
+h2 {
+color:#A4A400;
+background-color:#F0F0F0;
+font-family:Lucida Sans Unicode;
+font-size:18pt;
+text-align:left;
+text-decoration: underline;
+}
+p {
+color:#404040;
+font-size:11pt;
+font-family:"Georgia",serif;
+}
+
+a {
+color:#A4A400;
+font-size:11pt;
+font-family:"Georgia",serif;
+}
+
+hr{
+border: 1px solid grey;
+}
+
+li{
+color:#404040;
+font-size:11pt;
+font-family:"Georgia",serif;
+}
+
+.comments{
+     background-color:#FFFFA8;
+     margin:0 auto;
+     solid #000;
+     width:90%;
+     font-style: italic;
+
+}
+
+
+
+
+.copyright{
+    text-align:right;
+    color:#404040;
+    font-size:11pt;
+     solid #000;
+     width:20%;
+}
+
+
+body {
+    background-image:url(./recipesImgs/silverware.jpg);
+    }
+body {
+font-size:11pt;
+font-family:"Georgia",serif; background-color:white;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; }
+    .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+span.strike {
+    text-decoration: line-through;
+}
+
+
+ul.pie li {
+    line-height: 1.3em;
+    margin: .25em 0;
+    padding: 0 0 0 20px;
+    background:url(https://raw.githubusercontent.com/marrahd123/Web-Engineering/master/images/pie_icon.gif
+) no-repeat 0 7px;

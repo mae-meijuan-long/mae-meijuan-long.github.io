@@ -1,0 +1,60 @@
+p>strong {
+ color:#FF0000;
+}
+
+h1 {
+    color:white;
+    font-family:Arial Black;
+    font-size:4vw;
+}
+body {
+ background-color: pink;
+}
+h2 {
+    color:white;
+    font-family: Georgia;
+}
+a:link { color: #FFFF00;
+ text-decoration: none;
+}
+a:visited { color: red;}
+a:hover { color: white; text-decoration: underline;}
+a:active { color: #0000FF; }
+
+
+div>strong{
+ color:white;
+ font-weight: bold;
+ background-color: #ff3399 ;
+}
+
+.current-class{
+    color:green;
+    font-weight: bold;
+    font-size:2vw;
+    padding:4px 0px 4px 0px;
+}
+p::first-letter {
+  font-size:2vw;
+}
+
+ul>li{
+    font-family:Trebuchet MS;
+    font-size:1.5vw;
+}
+
+ol {
+  display: flex;
+  flex-direction: column-reverse;
+}
+ol>li{
+    font-family:Trebuchet MS;
+    font-size:1.5vw;
+}
+dt {
+     color:green;
+     font-weight: bold;
+}
+dd {
+     font-size:1.2vw;
+}
