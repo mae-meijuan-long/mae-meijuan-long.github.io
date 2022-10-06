@@ -92,10 +92,11 @@ div>p{
 .critic {
     display: inline-block;
     margin:0;
-    font-style:italic;
     margin-bottom:20pt;
 }
-
+.critic>span{
+    font-style:italic;
+}
 #aftercolumns {
     background-color: #A2B964;
     clear: both;
