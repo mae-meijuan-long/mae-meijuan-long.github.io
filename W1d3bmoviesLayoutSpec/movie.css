@@ -1,0 +1,128 @@
+body {
+    background-image:url(./images/background.png);
+    margin:0;
+    font-size: 8pt;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+
+#banner {
+       background-image:url(./images/bannerbg.png);
+       text-align:center;
+       margin:0;
+       padding:0;
+       high:50px;
+}
+h1 {
+    text-align:center;
+    text-shadow: 3px 3px 0px #999999;
+    font-size:24pt;
+    font-family:Tahoma;
+}
+.center_container {
+    float:left;
+    max-width:800px;
+    border: 4px solid gray;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.left_container {
+    float:left;
+    width:18%;
+    border: 4px solid gray;
+    border-radius: 20px;
+    visibility:hidden;
+}
+
+.general_overview {
+    float:right;
+    width:250px;
+    font-family:Arial;
+    margin:0;
+    padding:0;
+}
+
+.rotten_overview {
+    float:left;
+    width:550px;
+}
+#rotten-head {
+    background-color: red;
+    margin: 0px;
+    padding: 0px;
+    background-image:url(./images/rbg.png);
+}
+#rotten-head>img {
+    vertical-align: middle;
+    margin: 0px;
+}
+#rotten-head>span {
+    vertical-align: middle;
+    font-size:48pt;
+    color:red;
+    font-weight:bold;
+}
+
+.border-one-div{
+  border: 2px solid gray;
+  border-radius: 10px;
+  background-color:#E8DC9B;
+  overflow:hidden;
+  padding:8px;
+}
+.border-one-div>img {
+    float: left;
+     margin-right: 5px;
+}
+.column1 {
+          float: left;
+          width: 47%;
+          margin-left:2%;
+        }
+
+.column2 {
+            float: right;
+            width: 47%;
+            margin-right:2%;
+        }
+div>p{
+    font-weight:bold;
+    font-size:8pt;
+}
+.critic {
+    display: inline-block;
+    margin:0;
+    font-style:italic;
+    margin-bottom:20pt;
+}
+
+#aftercolumns {
+    background-color: #A2B964;
+    clear: both;
+    padding:5px;
+    margin:0px;
+    text-align:center;
+    font-weight: normal;
+}
+dt {
+    font-weight:bold;
+    margin:10px 10px 0px 10px;
+}
+.overview {
+  background-color: #A2B964;
+  float:right;
+  margin:0;
+}
+dl li{
+    list-style-type: none
+}
+.dd-list{
+    margin:0px;
+}
+.button-links {
+    margin-top:68%;
+    float:right;
+}
+
+/*48pt red bold font*/
