@@ -140,6 +140,17 @@ const product_of_all_elements = function(prevValue, elem, i, array){
 console.log("Expected output of product_of_all_elements([1,3,5,3,3]) is 135  " + myFunctionTest(135, [1,3,5,3,3].reduce(product_of_all_elements)));
 
 
+function shortest(a,b,c) {
+
+  const arrLen = [a,b,c];
+  return arrLen.reduce((x,y)=>{
+        if(x.length>=y.length){
+            return y;
+        }else{
+            return x;
+        }
+  })
+}
 
 
 </script>
