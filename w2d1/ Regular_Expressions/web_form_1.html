@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="web_1.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div id="container">
+    <form>
+        <div>
+            <lable for="email-address" class="labels"> Email Address </lable>
+        </div>
+        <div>
+            <input type="text" name="email" placeholder="Enter email" required>
+        </div>
+        <div>
+            <lable for="info" class="label2"> We'll never share your email with anyone else.  </lable>
+        </div>
+        <div>
+            <lable for="password" class="labels"> Password </lable>
+        </div>
+        <div>
+            <input type="password"  name="password"   pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{10,}" required>
+        </div>
+        <div>
+            <lable for="url" class="labels"> URL </lable>
+        </div>
+        <div>
+            <input type="text" name="url" placeholder="Enter url" title="https "  placeholder="Enter URL" pattern="http(s)?:\/\/.*" required >
+        </div>
+        <div>
+            <input type="checkbox" class="check" name="check-me-out">
+            <lable for ="check-me-out" class="labels">Check me out</lable>
+        </div>
+        <div>
+            <button type="submit" class="btn btn-primary my-3" id="submit-button">Submit</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

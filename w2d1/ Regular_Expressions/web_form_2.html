@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Webform 2</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="web_2.css" rel="stylesheet" />
+</head>
+
+<body>
+<div>
+    <div class="menu">
+        <div class="nav-bar">
+            <span class="label1">MUM Golden Dome Market ::: SRM System</span>
+            <span class="product">Products</span>
+            <span class="supplier">Suppliers</span>
+        </div>
+        <div class="logout">
+            <span>Hello! </span><button class="btn btn-primary">Sign Out</button>
+        </div>
+    </div>
+</div>
+
+<div class="content">
+    <h4>
+        New Product Form
+    </h4>
+    <form class="form-container">
+        <div class="input-form">
+            <label>Product Number</label><br />
+            <input type="text" name="product-number" required pattern="[0-9]+" />
+        </div>
+        <div class="input-form">
+            <label>Quantity in stock</label><br />
+            <input type="text" name="quantity" required pattern="[0-9]+" />
+        </div>
+        <div class="input-form">
+            <label>Name</label><br />
+            <input type="text" name="name" pattern="[a-zA-Z]{3,}" />
+        </div>
+        <div class="input-form">
+            <label>Supplier:</label><br />
+            <select >
+                <option selected>Select Supplier</option>
+                <option>A</option>
+                <option>B</option>
+                <option>C</option>
+                <option>D</option>
+            </select>
+        </div>
+        <div class="input-form">
+            <label>Unit price</label><br />
+            <input type="number" step="0.1" placeholder="0.0" name="unitprice" />
+        </div>
+        <div class="input-form">
+            <label >Date supplied</label><br />
+            <input type="date" name="supplydate" required />
+        </div>
+        <div id="button-area">
+            <button class="btn btn-primary" id="reset">
+                Reset
+            </button>
+            <button  class="btn btn-primary" id="cancel" >
+                Cancel
+            </button>
+            <button  class="btn btn-primary" id="add" >
+                Add Product
+            </button>
+        </div>
+    </form>
+
+</div>
+</body>
+
+</html>
