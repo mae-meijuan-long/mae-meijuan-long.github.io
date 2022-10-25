@@ -1,0 +1,35 @@
+<%- include('layout/header.ejs')%>
+<link href="/css/product.css" rel="stylesheet" />
+    <title>Product Lists</title>
+    </head>
+
+    <body>
+
+        <form method="POST" action="/addToCart">
+            <input type="hidden" name="id" value=<%=product.id%> />
+            <input type="hidden" name="name" value=<%=product.name %> />
+            <input type="hidden" name="price" value=<%=product.price%> />
+            <input type="hidden" name="description" value=<%=product.description%> />
+            <div id="container">
+               <div>
+                   <label for="name">Name:</label>
+                <span>
+                <%=product.name%>
+            </span>
+            </div>
+            <div>
+                <label for="description">Description:</label>
+                <span>
+                <%=product.description %>
+            </span>
+            </div>
+            <div>
+                <label for="price">Price:</label>
+                <span>
+                <%=product.price%>
+            </span>
+            </div>
+                <input type="submit" value="Add to cart " />
+            </div>
+        </form>
+        <%- include('layout/footer.ejs')%>
