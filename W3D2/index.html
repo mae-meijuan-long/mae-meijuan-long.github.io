@@ -10,24 +10,27 @@
 
 </head>
 <body>
-  <div id="configurations">
-    <div>Width</div>
-    <input type="number">
-    <div>Growth Amount</div>
-    <input type="number">
-
-    <div>Growth Interval</div>
-    <input type="number">
-
-    <div>Number Circles</div>
-    <input type="number">
+<div id="container"  >
+    <div class="form-group">
+        <label>Width</label>
+        <input type="number" class="form-control" id="circle-width" value="5" />
+    </div>
     <div>
-     <input type="button" value="start">
+        <label>Growth Amount</label>
+        <input type="number" class="form-control"  id="growth-amount" value="10" />
     </div>
-    <div id="circles">
-<!--        <div id="first-div-circle"></div>-->
+    <div>
+        <label>Growth Interval</label>
+        <input type="number" class="form-control" id="growth-interval"  value="400" />
     </div>
-
-  </div>
+    <div>
+        <label>Number Circles</label>
+        <input type="number" class="form-control"  id="numberOf-circle" value="15" />
+    </div>
+    <div><button type="submit" id="start" class="btn btn-primary my-3">Start</button></div>
+</div>
+<div class="content">
+    <div id="circles"></div>
+</div>
 </body>
 </html>
