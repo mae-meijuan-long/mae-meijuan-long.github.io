@@ -49,7 +49,9 @@ app.post('/addToCart', (req, res,next) => {
                     console.log("keys===>"+key);
                     console.log("values==>"+value.qualities);
                 }
-                res.render('shop',{cart:req.session.cart});
+                res.send(200,Object.keys(req.session.cart).length)
+//                               .render('shop',{cart:req.session.cart});
+//                res.render('shop',{cart:req.session.cart});
          });
 
 
