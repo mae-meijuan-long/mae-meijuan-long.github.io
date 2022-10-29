@@ -1,35 +1,26 @@
 const express = require('express');
-const path = require('path');
 const app = express();
+const path = require('path');
+const rootDir = require('./util/path');
+
 app.use(express.urlencoded({ extended: false }));
 
-app.get('/',(req,res,next)=>{
-    const date = new Date();
-    const hour = date.getHours();
-    let csslinktag  = '<link  href="/css/night.css" rel="stylesheet" />';
-    console.log("current hour=>"+hour);
-    //Between 6am and 6pm the server
-    if(hour>6 && hour<18){
-          csslinktag = '<link  href="/css/day.css" rel="stylesheet" />';
+const date = new Date();
+const hour = date.getHours();
+app.use('/css/stylesheet.css', express.static(path.join(rootDir, 'public','css',  (hour > 6 && hour < 18) ? 'day.css' : 'night.css' )));
+
+app.get('/', (req, res) => {
+    res.sendFile(path.join(rootDir,'resources','views', 'form.html'));
+});
+app.post('/result', (req, res) => {
+    let name = req.body.name;
+    let age=req.body.age;
+    if (!name) {
+        name = "person";
     }
-
-    res.send('<!DOCTYPE html>'+
-              '<html lang="en">'+
-              '<head>'+
-                  '<meta charset="UTF-8">'+
-                  '<title>Title</title>'+
-                  csslinktag+
-              '</head>'+
-              '<body>'+
-              '<form action="/result" method="post">Name <input name="name"> Age <input name="age"><button type="submit">Submit Query</button></form>'+
-              '</body>'+
-              '</html>')
-})
-
-app.post('/result',(req,res,next)=>{
-    res.send('welcome, ' + req.body.name + ' the age is '+ req.body.age);
-})
-
-app.use('/css', express.static(path.join(__dirname, 'css')));
-
+    if(!age){
+        age=0;
+    }
+    res.send(`Welcome ${name}, ${age} years old!`);
+});
 app.listen(3000);
